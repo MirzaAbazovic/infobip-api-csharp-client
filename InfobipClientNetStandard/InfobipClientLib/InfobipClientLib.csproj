@@ -1,17 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	<Authors>Mirza Abazovic</Authors>
 	<Company>Infobip</Company>
 	<Product>Infobip Api C# Client NetStandard</Product>
-	<Description>Infobip API C# dotnet standard 2.0 Client Library</Description>
+	<Description>Infobip API C# dotnet standard Client Library</Description>
 	<PackageId>Infobip.Api.Client.NetStandard</PackageId>
+	<Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.Collections.Specialized" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Web.HttpUtility">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.1.0\ref\netcoreapp2.1\System.Web.HttpUtility.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -1,14 +1,12 @@
 using Infobip.Api.Config;
 using Infobip.Api.Model.Exception;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 using Infobip.Api.Model.Omni.Campaign;
+using System.Web;
 
 namespace Infobip.Api.Client
 {

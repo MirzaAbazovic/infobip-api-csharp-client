@@ -1,14 +1,11 @@
 using Infobip.Api.Config;
 using Infobip.Api.Model.Exception;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 using Infobip.Api.Model.Omni.Scenarios;
+using System.Collections.Specialized;
+using InfobipClientLib.Infobip.Api.Helpers;
 
 namespace Infobip.Api.Client
 {
@@ -37,7 +34,7 @@ namespace Infobip.Api.Client
         {
             using (var client = HttpClientProvider.GetHttpClient(configuration))
             {
-                NameValueCollection queryParameters = HttpUtility.ParseQueryString(string.Empty);
+                NameValueCollection queryParameters = Helpers.ParseQueryString(string.Empty);
                 SetQueryParamIfNotNull(queryParameters, "isDefault", context.IsDefault);
                 SetQueryParamIfNotNull(queryParameters, "limit", context.Limit);
                 SetQueryParamIfNotNull(queryParameters, "page", context.Page);
