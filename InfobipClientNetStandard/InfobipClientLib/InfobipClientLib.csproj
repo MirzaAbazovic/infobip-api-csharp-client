@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<Authors>Mirza Abazovic</Authors>
+	<Company>Infobip</Company>
+	<Product>Infobip Api C# Client NetStandard</Product>
+	<Description>Infobip API C# dotnet standard 2.0 Client Library</Description>
+	<PackageId>Infobip.Api.Client.NetStandard</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
